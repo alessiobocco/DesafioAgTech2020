@@ -1,0 +1,23 @@
+
+# ------------------------------------------------------------------------------
+# ---- Google Earth Engine ----
+# ------------------------------------------------------------------------------
+gge:
+    usuario: 'alessiobocco'
+    coleccion: 'COPERNICUS/S2'
+    # Sentinel 2: COPERNICUS/S2
+    # LandSat 8: LANDSAT/LC08
+    bandas: ['B2', 'B3', 'B4', 'B5','B6','B7','B8', 'B8A', 'B10', 'B11']
+    area_estudio: 'users/boccoalessio/area_estudio_buffer'
+    date:
+        begin_date: '2018-07-01'
+        end_date: '2020-07-30'
+    cloudiness: 10
+# ------------------------------------------------------------------------------
+
+projections:
+    # Gauss-Kruger
+    gk: '+proj=tmerc +lat_0=-90 +lon_0=-60 +k=1 +x_0=5500000 +y_0=0 +ellps=intl +twogs84=-148,136,90,0,0,0,0 +units=m +no_defs'
+    # Latitude and longitude in decimal degrees.
+    latlon: '+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0'
+# ------------------------------------------------------------------------------
